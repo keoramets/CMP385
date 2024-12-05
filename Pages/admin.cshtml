@@ -1,0 +1,140 @@
+﻿@page 
+@model CMP385.Pages.adminModel
+@{
+}
+<body>
+    <div class="admin-page">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Admin Panel</h3>
+            <a href="#papers">Manage Papers</a>
+            <a href="#authors">Manage Authors</a>
+            <a href="#reviewers">Manage Reviewers</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <div class="navbar">
+                <div class="title">Welcome, Admin</div>
+                <div class="actions">
+                    <a asp-page="/login" class="btn">Logout</a>
+                </div>
+            </div>
+
+            <!-- Papers Section -->
+            <div class="table-section" id="papers">
+                <h3>Manage Papers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>AI in Medicine</td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Web Development</td>
+                            <td>Approved</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cybersecurity Trends</td>
+                            <td>Rejected</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Authors Section -->
+            <div class="table-section" id="authors">
+                <h3>Manage Authors</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Affiliation</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Julius Choga</td>
+                            <td>Tech University</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ashely Geldmeier</td>
+                            <td>Science Institute</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reviewers Section -->
+            <div class="table-section" id="reviewers">
+                <h3>Manage Reviewers</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Smith</td>
+                            <td>Computer Science</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Prof. Hoen</td>
+                            <td>Mathematics</td>
+                            <td>
+                                <button class="crud-button">Edit</button>
+                                <button class="crud-button">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
