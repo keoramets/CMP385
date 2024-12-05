@@ -1,0 +1,28 @@
+﻿@page 
+@model CMP385.Pages.reviewer_reportModel
+@{
+}
+
+<body>
+    <div class="review-report-page">
+        <div class="container">
+            <h2>Review Report</h2>
+            <div class="form-container">
+                <div class="form-section">
+                    <label for="Paper1">Example Paper</label>
+                    <textarea id="Paper1" name="Paper1" rows="10" placeholder="Enter the example paper content here" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-section">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter your review comments here" required></textarea>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn">Submit Review</button>
+            </div>
+        </div>
+    </div>
+</body>
